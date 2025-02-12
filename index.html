@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Trionow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    // Funktion zum Anzeigen der Bilder auf der Startseite
+    window.onload = function() {
+        const imagesSection = document.getElementById('work-images');
+        if (imagesSection) {
+            imagesSection.style.display = 'block'; // Macht die Bilder sichtbar
+        }
+    };
+</script>
+
+<body>
+    <script>
+        // Funktion prüft, ob "showImages=true" in der URL ist
+        function checkForImages() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('showImages') === 'true') {
+                showImages(); // Bilder anzeigen
+            }
+        }
+    
+        // Funktion, die bereits in works.html genutzt wird
+        function showImages() {
+            const imagesSection = document.getElementById('work-images');
+            if (imagesSection) {
+                imagesSection.style.display = 'block';
+            }
+        }
+    
+        // Funktion aufrufen, wenn die Seite geladen ist
+        window.onload = checkForImages;
+    </script>
+    
+
+    <header>
+        <h1 class="logo">Alina Trionow</h1>
+        <nav>
+            <ul>
+                <li><a href="works.html">works</a></li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+  <!-- Der klickbare Text, der immer angezeigt wird -->
+<a href="javascript:void(0)" class="work-link"> > material contrast I - III, 2025</a>
+
+<!-- Die Bilder, die direkt beim Laden der Seite sichtbar sind -->
+<section id="work-images" style="display: block;">
+    <div>
+        <img src="image1.jpg" alt="Bild 1" width="100%">
+    </div>
+    <div>
+        <img src="image2.jpg" alt="Bild 2" width="100%">
+    </div>
+</section>
+
+    </main>
+</body>
+</html>
+
+<footer>
+    <p>© 2025 - Alina Trionow </p>
+</footer>
+

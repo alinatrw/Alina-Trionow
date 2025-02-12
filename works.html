@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works - Alina Trionow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html?showImages=true" class="logo-link">
+            <h1 class="logo">Alina Trionow</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="works.html">works</a></li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <!-- Der klickbare Text, der Bilder anzeigen wird -->
+        <a href="javascript:void(0)" onclick="showImages()" class="work-link"> > material contrast I - III, 2025</a>
+
+        <!-- Die Bilder werden hier angezeigt, wenn der Text angeklickt wird -->
+        <section id="work-images" style="display: none;">
+            <div>
+                <img src="image1.jpg" alt="Bild 1" width="100%">
+            </div>
+            <div>
+                <img src="image2.jpg" alt="Bild 2" width="100%">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Alina Trionow </p>
+    </footer>
+
+    <script>
+        function showImages() {
+            const imagesSection = document.getElementById('work-images');
+            if (imagesSection.style.display === 'block') {
+                imagesSection.style.display = 'none'; // Versteckt die Bilder
+            } else {
+                imagesSection.style.display = 'block'; // Macht die Bilder sichtbar
+            }
+        }
+    </script>
+</body>
+</html>
