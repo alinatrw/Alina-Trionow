@@ -285,13 +285,18 @@ footer {
     margin-bottom: 10px; /* Optional: Abstand zwischen den Listenelementen */
 }
 .bio {
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 2em 1em;
+    padding: 0;
 }
+
 
 .bio p {
     line-height: 1.6;
     margin-bottom: 1.2em;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
