@@ -285,9 +285,11 @@ footer {
     margin-bottom: 10px; /* Optional: Abstand zwischen den Listenelementen */
 }
 .bio {
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 2em 1em;
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    text-align: left;
+    margin: 20px;
+    padding: 0;
 }
 
 
