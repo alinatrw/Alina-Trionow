@@ -328,3 +328,25 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.video-entry {
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 2rem;
+    text-align: left;
+}
+
+.video-link {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.video-link .arrow {
+    padding: 0 0.3rem;
+    color: inherit;
+}
+
+.video-link:hover .arrow {
+    background-color: red;
+    color: white;
+}
