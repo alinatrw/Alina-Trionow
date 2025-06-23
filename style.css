@@ -396,10 +396,48 @@ body[data-page="info"] .engagement {
 }
 .arrow-link {
     text-decoration: none;
-    color: black;
+    color: black
     transition: color 0.3s;
 }
 
 .arrow-link:hover {
+    color: red;
+}
+.sensorium-info-block {
+    background-color: rgb(140, 140, 140);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+}
+
+.sensorium-info-block a.sensorium-arrow {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sensorium-info-block a.sensorium-arrow:hover {
+    color: red;
+}
+.sensorium-contact {
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+    text-align: left;
+    margin: 40px 20px;
+    line-height: 1.6;
+}
+
+.sensorium-contact a.sensorium-insta {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.sensorium-contact a.sensorium-insta:hover {
     color: red;
 }
