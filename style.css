@@ -441,3 +441,17 @@ body[data-page="info"] .engagement {
 .sensorium-contact a.sensorium-insta:hover {
     color: red;
 }
+
+
+.sensorium-image-row {
+    display: flex;
+    justify-content: center;  /* optional: zentriert die Bilder in der Zeile */
+}
+
+.sensorium-image-row img {
+    width: 33%;       /* beide Bilder nehmen je die Hälfte ein */
+    height: auto;
+    display: block;
+    margin: 0;        /* kein Abstand zwischen den Bildern */
+    padding: 0;
+}
