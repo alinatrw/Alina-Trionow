@@ -449,7 +449,7 @@ body[data-page="info"] .engagement {
 }
 
 .sensorium-image-row img {
-    width: 33%;       /* beide Bilder nehmen je die Hälfte ein */
+    width: 42%;       /* beide Bilder nehmen je die Hälfte ein */
     height: auto;
     display: block;
     margin: 0;        /* kein Abstand zwischen den Bildern */
