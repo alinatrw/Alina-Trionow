@@ -55,17 +55,9 @@ nav ul li a {
 /* Hauptbereich */
 
 main {
-    padding: 40px 20px;
-    max-width: 800px;      /* ← begrenzt die Breite */
-    margin-left: 20px;     /* ← Abstand vom linken Rand */
-    margin-right: auto;    /* ← verhindert zentrieren */
-    text-align: left;      /* ← Links ausgerichtet */
-    box-sizing: border-box;
-    flex: 1;
+    padding: 40px;
+    text-align: center;
 }
-
-
-
 
 
 h1, h2, h3, h4, h5, h6, p, a, span, li {
@@ -382,5 +374,23 @@ footer {
 
 .manifest-content {
     display: none;
+    color: black
     margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    line-height: 1.6;
+}
+
+body[data-page="sensorium"] .bio {
+    max-width: 1300px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+body[data-page="info"] .bio,
+body[data-page="info"] .exhibitions,
+body[data-page="info"] .performance,
+body[data-page="info"] .engagement {
+    max-width: 1300px;
+    margin-left: 20px;
+    margin-right: auto;
 }
