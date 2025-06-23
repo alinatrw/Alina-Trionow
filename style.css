@@ -53,14 +53,19 @@ nav ul li a {
 }
 
 /* Hauptbereich */
+
 main {
-    max-width: 800px;         /* Begrenzung auf eine angenehme Lesebreite */
-    margin: 0 auto;           /* zentriert den Block horizontal */
-    padding: 40px 20px;       /* Innenabstand (auch auf kleineren Bildschirmen lesbar) */
-    text-align: left;         /* Text bleibt linksbündig */
-    box-sizing: border-box;   /* Padding zählt zur max-width */
-    flex: 1;                  /* Falls nötig für Flex-Layout mit Footer */
+    padding: 40px 20px;
+    max-width: 800px;      /* ← begrenzt die Breite */
+    margin-left: 20px;     /* ← Abstand vom linken Rand */
+    margin-right: auto;    /* ← verhindert zentrieren */
+    text-align: left;      /* ← Links ausgerichtet */
+    box-sizing: border-box;
+    flex: 1;
 }
+
+
+
 
 
 h1, h2, h3, h4, h5, h6, p, a, span, li {
