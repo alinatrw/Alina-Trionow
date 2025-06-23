@@ -394,3 +394,12 @@ body[data-page="info"] .engagement {
     margin-left: 20px;
     margin-right: auto;
 }
+.arrow-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.arrow-link:hover {
+    color: red;
+}
