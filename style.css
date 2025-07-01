@@ -455,3 +455,40 @@ body[data-page="info"] .engagement {
     margin: 0;        /* kein Abstand zwischen den Bildern */
     padding: 0;
 }
+.performance-list {
+    text-align: left;
+    margin: 40px 20px;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+}
+
+.performance-title {
+    cursor: pointer;
+    margin: 20px 0 10px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.performance-title:hover {
+    color: red;
+}
+
+.performance-content {
+    display: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.performance-images {
+    display: flex;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: left;
+}
+
+.performance-images img {
+    width: 45%; /* Zwei Bilder nebeneinander mit kleinem Abstand */
+    height: auto;
+    display: block;
+}

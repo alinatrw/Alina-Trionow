@@ -29,10 +29,77 @@
         </nav>
     </header>
 
-  
+    <main>
+        <section class="performance-list">
+
+            <div class="performance-item">
+                <div class="performance-title">> 28.07.2024: ROSA RUBEA with Jonah Martensen</div>
+                <div class="performance-content">
+
+                    <div class="space-4rem"></div>
+                    <p><strong>title:</strong> ROSA RUBEA (45 minutes)</p>
+                    <p><strong>location:</strong> Glashaus Jena Paradies, Germany</p>
+                    <p><strong>description:</strong> performative pacours</p>
+
+                    <div class="space-4rem"></div>
+                    <div class="space-4rem"></div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="performance-item">
+                <div class="performance-title">> 16.09.2023: physicality of noise with Mario Pytark</div>
+                <div class="performance-content">
+                    <div class="space-4rem"></div>
+                    <div class="performance-images">
+                        <img src="images/performance1.jpg" alt="Performance Bild 1">
+                        <img src="images/performance2.jpg" alt="Performance Bild 2">
+                    </div>
+                    <div class="space-4rem"></div>
+                    <p><strong>title:</strong> physicality of noise (60 minutes)</p>
+                    <p><strong>location:</strong> NOVA Art Space, Weimar, Germany</p>
+                    <p><strong>description:</strong> noise performance with performance action</p>
+
+                    <div class="space-4rem"></div>
+                    <div class="space-4rem"></div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Weitere performance-items hier -->
+
+
+
+
+
+
+
+        </section>
+    </main>
+    
+
+
+
 
     <footer>
         <p>© 2025 - Alina Trionow</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.performance-title').forEach(function(title) {
+            title.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    
+
 </body>
 </html>
