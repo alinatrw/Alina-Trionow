@@ -500,3 +500,31 @@ body[data-page="info"] .engagement {
     height: auto;
     display: block;
 }
+.performance-images-3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* für kleinere Bildschirme */
+}
+
+.performance-images-3 img {
+    width: 32%;
+    height: auto;
+    display: block;
+}
+.performance-images-4 {
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* erlaubt Umbruch auf kleinen Bildschirmen */
+}
+
+.performance-images-4 img {
+    width: 24%;  /* knapp unter 25%, damit Platz für gap bleibt */
+    height: auto;
+    display: block;
+}
