@@ -396,7 +396,7 @@ body[data-page="info"] .engagement {
 }
 .arrow-link {
     text-decoration: none;
-    color: black
+    color: black;
     transition: color 0.3s;
 }
 
@@ -460,18 +460,26 @@ body[data-page="info"] .engagement {
     margin: 40px 20px;
     font-family: 'Monofonto', monospace;
     font-size: 14px;
+
 }
 
 .performance-title {
-    cursor: pointer;
-    margin: 20px 0 10px;
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
     color: black;
+    text-align: left;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
     transition: color 0.3s;
+    cursor: pointer;
 }
+  
 
 .performance-title:hover {
     color: red;
 }
+
 
 .performance-content {
     display: none;
