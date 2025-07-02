@@ -30,20 +30,52 @@
     </header>
 
     <main>
-        <a href="javascript:void(0)" class="work-link"> > material contrast I - III, 2025</a>
+        <div class="performance-item">
+            <div class="performance-title">> material poem I - III, 49 x 39 cm each, assemblage technique on wood, 2025</div>
+            <div class="performance-content">
+                
+                <div>
+                    <img src="image1.jpg" alt="Bild 1" width="100%">
+                </div>
+                <div>
+                    <img src="image2.jpg" alt="Bild 2" width="100%">
+                </div>
 
-        <section id="work-images">
-            <div>
-                <img src="image1.jpg" alt="Bild 1" width="100%">
+
             </div>
-            <div>
-                <img src="image2.jpg" alt="Bild 2" width="100%">
+        </div>
+
+
+
+        <div class="performance-item">
+            <div class="performance-title">> soundscape botanical garden Valencia (visual score), 60 x 73 cm, assemblage technique on wood, 2024</div>
+            <div class="performance-content">
+                
+                <div>
+                    <img src="images/painting 3.jpg" alt="Bild 1" width="40%">
+                </div>
+                
+
             </div>
-        </section>
+        </div>
+
+
+
+
     </main>
+    
 
     <footer>
         <p>© 2025 - Alina Trionow</p>
     </footer>
+    <script>
+        document.querySelectorAll('.performance-title').forEach(function(title) {
+            title.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    
 </body>
 </html>

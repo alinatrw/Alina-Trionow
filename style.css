@@ -333,7 +333,7 @@ footer {
 .video-entry {
     font-family: inherit;
     font-size: 1rem;
-    margin: 2rem;
+    margin: auto;
     text-align: left;
 }
 
@@ -457,7 +457,7 @@ body[data-page="info"] .engagement {
 }
 .performance-list {
     text-align: left;
-    margin: 40px 20px;
+    margin: auto;
     font-family: 'Monofonto', monospace;
     font-size: 14px;
 
@@ -496,7 +496,7 @@ body[data-page="info"] .engagement {
 }
 
 .performance-images img {
-    width: 45%; /* Zwei Bilder nebeneinander mit kleinem Abstand */
+    width: 49%; /* Zwei Bilder nebeneinander mit kleinem Abstand */
     height: auto;
     display: block;
 }
