@@ -531,3 +531,6 @@ body[data-page="info"] .engagement {
     height: auto;
     display: block;
 }
+nav ul li a[href="graphics.html"] {
+    display: none;
+}
