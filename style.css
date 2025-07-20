@@ -282,10 +282,13 @@ footer {
 }
 
 .exhibitions ul li,
-.performance ul li {
-    line-height: 1.5 !important;
-    margin-bottom: 10px; /* Optional: Abstand zwischen den Listenelementen */
+.performance ul li,
+.engagement ul li {
+    line-height: 2 !important;
+    margin-bottom: 10px;
 }
+ /* Optional: Abstand zwischen den Listenelementen */
+
 .bio {
     font-size: 14px;
     font-family: 'Monofonto', monospace;
