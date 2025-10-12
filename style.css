@@ -531,3 +531,32 @@ body[data-page="info"] .engagement {
     height: auto;
     display: block;
 }
+.shows-heading {
+    font-weight: bold;       /* nur die Überschriften fett */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;        /* linksbündig */
+    font-size: 14px;         /* gleiche Schriftgröße wie restlicher Text */
+}
+
+.show-title {
+    cursor: pointer;
+    font-weight: normal;     /* Termine normal, nicht fett */
+    margin: 5px 0;
+    text-align: left;        /* linksbündig auf gleicher Höhe wie Text */
+    font-size: 14px;         /* gleiche Schriftgröße */
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.show-title:hover {
+    color: red;              /* Hover-Effekt */
+}
+
+.show-content img {
+    display: block;
+    margin-top: 10px;
+    max-width: 35%;
+    height: auto;
+    border-radius: 5px;
+}

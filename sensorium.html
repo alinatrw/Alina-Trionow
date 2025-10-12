@@ -35,7 +35,7 @@
 
     <main>
 
-    
+        <p><strong>* SENSORIUM COLLECTIVE *   </strong></p>
 
 
         <section class="bio">
@@ -84,6 +84,7 @@
        
         <section class="manifest-list">
 
+<p><strong>MANIFESTOS</strong></p>
 
             <div class="manifest-item">
                 <div class="manifest-title">> MANIFESTO NO. 4 (Interpreted by Maddie Marone, December 2024)</div>
@@ -791,23 +792,40 @@ its jolt.
         <div class="space-4rem"></div>
 
 
-        
 
+        
  <section class="sensorium-contact">
 
-    <p><strong>UPCOMING SHOWS :</strong></p>
+    <p><strong>+++ UPCOMING SHOWS +++</strong></p>
 
-    <p> 09.11.2025: Performance "the goat", Roma, IT</p>
+
+    <div class="show-item">
+        <div class="show-title"> > 09.11.2025: Action/ Noise Performance "the goat sacrifice", ESC Perimenta (presented by sineforma), Roma, IT</div>
+        <div class="show-content" style="display: none;">
+            <img src="images/goat.jpg" alt="Performance 'the goat' in Roma">
+        </div>
+    </div>
+
+    <div class="space-4rem"></div>
+
+
     
     <div class="space-4rem"></div>
     
-                <p><strong>PAST SHOWS :</strong></p>
+                <p><strong>+++ PAST SHOWS +++</strong></p>
     
-                <p>
-                    21.–31.08.2025: Lab and Performances at La BIG, 6th biennale of independent art spaces, Geneva, CHE 
-                    <a href="https://bigbiennale.ch/" class="sensorium-arrow" target="_blank">>></a>
-                </p>
-                <p>23.11.2024: Performance "collective transgression", Citylab 971, Rome, IT</p>
+
+                
+                    <p>> 21.–31.08.2025: Lab and Performances at La BIG, Geneva, CHE</p> 
+                   
+            
+                <div class="show-item">
+                    <div class="show-title"> > 23.11.2024: Performance "collective transgression", byebye 971 (presented by Biancofiore), Citylab 971, Rome, IT</div>
+                    <div class="show-content" style="display: none;">
+                        <img src="images/poster sensorium citylab.JPG" alt="Performance 'collective transgression' in Rome">
+                    </div>
+                </div>
+
         
                 <div class="space-4rem"></div>
 
@@ -833,6 +851,18 @@ its jolt.
             });
         });
     </script>
+
+<script>
+    document.querySelectorAll('.show-title').forEach(function(title) {
+        title.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        });
+    });
+</script>
+
+
+
     
 </body>
 </html>
