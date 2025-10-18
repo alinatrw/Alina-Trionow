@@ -560,3 +560,12 @@ body[data-page="info"] .engagement {
     height: auto;
     border-radius: 5px;
 }
+.instagram a {
+    color: inherit;              /* übernimmt die normale Textfarbe */
+    text-decoration: none;       /* entfernt Unterstreichung */
+    transition: color 0.2s ease; /* sanfter Farbwechsel */
+}
+
+.instagram a:hover {
+    color: red;                  /* wird rot beim Hover */
+}
