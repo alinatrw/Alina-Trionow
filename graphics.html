@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics – Alina Trionow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html?showImages=true" class="title-link">
+            <h1 class="logo">Alina Trionow</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">works</a>
+                    <ul class="dropdown-content">
+                        <li><a href="painting.html">painting</a></li>
+                        <li><a href="graphics.html">graphics</a></li>
+                        <li><a href="performance.html">performance</a></li>
+                        <li><a href="video.html">video</a></li>
+                    </ul>
+                </li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="sensorium.html">SENSORIUM</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+
+
+
+    <div class="performance-item">
+      <div class="performance-title">> Environmental Patterns, graphite on paper, 2025</div>
+      <div class="performance-content">
+    
+        <div class="image-row">
+          <img src="images/Visual Scores/3-3.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/Score for print 3-2.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/ print 3..jpg" alt="Bild 3" width="32%">
+        </div>
+    
+        <div class="image-row">
+          <img src="images/Visual Scores/new 2.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/ print 12.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/Score for print 3-7.jpg" alt="Bild 3" width="32%">
+        </div>
+
+
+ <div class="image-row">
+          <img src="images/Visual Scores/print 14.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/print 16.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/ print 13.jpg" alt="Bild 3" width="32%">
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="performance-item">
+      <div class="performance-title">> Funny Figures, ink on paper, 2023</div>
+      <div class="performance-content">
+    
+        <div class="image-row">
+          <img src="Figures/4.jpg" alt="Bild 1" width="32%">
+          <img src="Figures/figur1.jpg" alt="Bild 2" width="32%">
+          
+          <img src="Figures/1.jpg" alt="Bild 3" width="32%">
+        </div>
+    
+      </div>
+    </div>
+    
+
+
+
+
+  </main>
+
+    <footer>
+        <p>© 2025 - Alina Trionow</p>
+    </footer>
+
+
+
+    <script>
+        document.querySelectorAll('.performance-title').forEach(title => {
+          title.addEventListener('click', () => {
+            const content = title.nextElementSibling;
+            content.style.display = 
+              content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        </script>
+        </body>
+</html>

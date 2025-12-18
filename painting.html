@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting - Alina Trionow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html?showImages=true" class="title-link">
+            <h1 class="logo">Alina Trionow</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">works</a>
+                    <ul class="dropdown-content">
+                        <li><a href="painting.html">painting</a></li>
+                        <li><a href="graphics.html">graphics</a></li>
+                        <li><a href="performance.html">performance</a></li>
+                        <li><a href="video.html">video</a></li>
+                    </ul>
+                </li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="sensorium.html">SENSORIUM</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="performance-item">
+            <div class="performance-title">> Material Poem I - III, 49 x 39 cm each, assemblage technique on wood, 2025</div>
+            <div class="performance-content">
+                
+                <div>
+                    <img src="image1.jpg" alt="Bild 1" width="100%">
+                </div>
+                <div>
+                    <img src="image2.jpg" alt="Bild 2" width="100%">
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="performance-item">
+            <div class="performance-title">> Soundscape Botanical Garden Valencia (visual score), 60 x 73 cm, assemblage technique on wood, 2024</div>
+            <div class="performance-content">
+                
+                <div>
+                    <img src="images/painting 3.jpg" alt="Bild 1" width="40%">
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+    
+
+    <footer>
+        <p>© 2025 - Alina Trionow</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.performance-title').forEach(function(title) {
+            title.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    
+</body>
+</html>

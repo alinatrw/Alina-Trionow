@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Trionow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    // Funktion zum Anzeigen der Bilder auf der Startseite
+    window.onload = function() {
+        const imagesSection = document.getElementById('work-images');
+        if (imagesSection) {
+            imagesSection.style.display = 'block'; // Macht die Bilder sichtbar
+        }
+    };
+</script>
+
+<body>
+    <script>
+        // Funktion prüft, ob "showImages=true" in der URL ist
+        function checkForImages() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('showImages') === 'true') {
+                showImages(); // Bilder anzeigen
+            }
+        }
+    
+        // Funktion, die bereits in works.html genutzt wird
+        function showImages() {
+            const imagesSection = document.getElementById('work-images');
+            if (imagesSection) {
+                imagesSection.style.display = 'block';
+            }
+        }
+    
+        // Funktion aufrufen, wenn die Seite geladen ist
+        window.onload = checkForImages;
+    </script>
+    
+
+    <header>
+        <h1 class="logo">Alina Trionow</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">works</a>
+                    <ul class="dropdown-content">
+                        <li><a href="painting.html">painting</a></li>
+                        <li><a href="graphics.html">graphics</a></li>
+                        <li><a href="performance.html">performance</a></li>
+                        <li><a href="video.html">video</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="info.html">info</a></li>
+                <li><a href="sensorium.html">SENSORIUM</a></li> 
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <main>
+
+        
+           <div class="image-row">
+          <img src="images/Visual Scores/3-3.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/Score for print 3-2.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/ print 3..jpg" alt="Bild 3" width="32%">
+        </div>
+    
+        <div class="image-row">
+          <img src="images/Visual Scores/new 2.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/ print 12.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/Score for print 3-7.jpg" alt="Bild 3" width="32%">
+        </div>
+
+
+ <div class="image-row">
+          <img src="images/Visual Scores/print 14.jpg" alt="Bild 1" width="32%">
+          <img src="images/Visual Scores/print 16.jpg" alt="Bild 2" width="32%">
+          
+          <img src="images/Visual Scores/ print 13.jpg" alt="Bild 3" width="32%">
+        </div>
+
+
+    </main>
+</body>
+</html>
+
+<footer>
+    <p>© 2025 - Alina Trionow </p>
+</footer>
+

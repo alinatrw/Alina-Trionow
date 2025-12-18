@@ -1,0 +1,573 @@
+@font-face {
+    font-family: 'Monofonto';
+    src: url('../fonts/monofonto-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Grundlegendes Styling */
+body {
+    font-family: 'Monofonto', monospace;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-weight: normal; /* Kein fettgedruckter Text */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Logo-Styling */
+.logo {
+    font-family: 'Monofonto', monospace;
+    font-size: 15px;
+    font-weight: normal; /* Kein fetter Text */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: underline; /* Navigationspunkte unterstrichen */
+    color: black;
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    font-weight: normal; /* Kein fetter Text */
+}
+
+/* Hauptbereich */
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+    font-weight: normal; /* Entfernt Fettschrift überall */
+}
+/* Kontaktseite Styling */
+.email {
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.instagram {
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.instagram a {
+    text-decoration: underline; /* Unterstrichen */
+    color: black;
+}
+/* Info-Seite Styling */
+.bio, .exhibitions, .performance, .engagement {
+    font-size: 14px; /* Schriftgröße auf 15px setzen */
+    font-family: 'Monofonto', monospace;
+    text-align: left; /* Links ausrichten */
+    margin: 20px;
+}
+
+.bio h2, .exhibitions, .performance h2, .engagement h2 {
+    font-size: 14px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.bio p, .exhibitions, .performance li, .engagement li {
+    margin-bottom: 10px;
+}
+
+/* Header Styling */
+header {
+    display: flex; /* Flexbox-Layout für das nebeneinander Anordnen */
+    justify-content: flex-start; /* Navigation und Überschrift nach links ausrichten */
+    align-items: center; /* Vertikal zentrieren */
+    padding: 20px;
+    background-color: white; /* Hintergrund weiß */
+    border: none; /* Falls ein Rand existiert, entfernen */
+    box-shadow: none; /* Falls ein Schatten existiert, entfernen */
+}
+
+/* Logo-Styling */
+header .logo {
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
+    margin-right: 50px; /* Größerer Abstand zwischen Logo und Navigation */
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex; /* Navigationselemente nebeneinander anordnen */
+    padding-left: 0; /* Entfernt Standard-Padding */
+}
+
+nav ul li {
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    margin-right: 20px; /* Abstand zwischen den Navigationselementen */
+}
+
+nav ul li a {
+    font-size: 15px; /* Schriftgröße auf 15px setzen */
+    font-family: 'Monofonto', monospace;
+    color: black; /* Farbe der Links */
+
+}
+
+/* Header Styling */
+header {
+    display: flex; /* Flexbox-Layout für das nebeneinander Anordnen */
+    justify-content: flex-start; /* Navigation und Überschrift nach links ausrichten */
+    align-items: center; /* Vertikal zentrieren */
+    padding: 20px;
+    background-color: white; /* Hintergrund weiß */
+    border: none; /* Falls ein Rand existiert, entfernen */
+    box-shadow: none; /* Falls ein Schatten existiert, entfernen */
+}
+
+/* Logo-Styling */
+header .logo {
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
+    margin-right: 40px; /* Größerer Abstand zwischen Logo und Navigation */
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex; /* Navigationselemente nebeneinander anordnen */
+    padding-left: 0; /* Entfernt Standard-Padding */
+}
+
+nav ul li {
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    margin-right: 20px; /* Abstand zwischen den Navigationselementen */
+}
+
+nav ul li a {
+    font-size: 15px; /* Schriftgröße auf 15px setzen */
+    font-family: 'Monofonto', monospace;
+    color: black; /* Farbe der Links */
+    
+}
+
+/* Hover-Effekt: Text wird rot beim Überfahren mit der Maus */
+nav ul li a:hover {
+    color: red; /* Textfarbe wird rot */
+}
+/* Footer Styling */
+footer {
+    text-align: center; /* Zentriert den Text */
+    font-size: 11px; /* Setzt die Schriftgröße auf 9px */
+    margin-top: 50px; /* Optionaler Abstand nach oben */
+    padding: 10px 0; /* Optionaler Abstand nach oben und unten */
+    background-color: white; /* Hintergrundfarbe für den Footer */
+    color: black; /* Textfarbe */
+}
+/* Setze die Höhe des gesamten Viewports auf 100% */
+html, body {
+    height: 100%; /* Stellt sicher, dass der gesamte Inhalt der Seite 100% der Höhe des Viewports einnimmt */
+    margin: 0; /* Entfernt den Standardabstand */
+    display: flex;
+    flex-direction: column; /* Damit die Inhalte vertikal gestapelt werden */
+}
+
+/* Der Hauptinhalt der Seite (in der Regel die Body-Inhalte) */
+main {
+    flex: 1; /* Ermöglicht es dem Main-Inhalt, den verfügbaren Raum zu füllen */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Zentriert den Text */
+    font-size:11px; /* Schriftgröße auf 9px */
+    padding: 10px 0; /* Optionaler Abstand oben und unten */
+    background-color: white; /* Hintergrundfarbe des Footers */
+    color: black; /* Textfarbe */
+    margin-top: auto; /* Sorgt dafür, dass der Footer immer am unteren Rand bleibt */
+}
+/* Stil für den Text auf der "works"-Seite */
+.work-link {
+    font-size: 15px;          /* Schriftgröße auf 15px setzen */
+    font-family: 'Monofonto', monospace;  /* Schriftart */
+    color: black;             /* Textfarbe schwarz */
+    text-align: left;         /* Text linksbündig ausrichten */
+    display: block;           /* Damit der Link als Block angezeigt wird */
+    margin: 20px 0;           /* Optionaler Abstand nach oben und unten */
+    text-decoration: none;    /* Entfernt die Unterstreichung */
+}
+
+/* Optional: Hover-Effekt für den Text */
+.work-link:hover {
+    color: red; /* Wenn der Text mit der Maus überfahren wird, wird die Farbe rot */
+}
+/* Logo-Link Styling */
+.title-link {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.title-link .logo {
+    color: black; /* Setzt die Schriftfarbe auf Schwarz */
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
+}
+/* Entfernt die Unterstreichung und setzt die Schriftfarbe auf Schwarz */
+a.logo-link {
+    text-decoration: none !important; /* Keine Unterstreichung */
+}
+
+a.logo-link .logo {
+    color: black !important; /* Schriftfarbe Schwarz */
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
+}
+
+/* Falls der Browser auf besuchte Links (visited) anders reagiert */
+a.logo-link:visited .logo,
+a.logo-link:hover .logo,
+a.logo-link:active .logo {
+    color: black !important; /* Auch bei Hover/Klick bleibt die Schrift Schwarz */
+    text-decoration: none !important; /* Kein Unterstrich */
+}
+
+footer a {
+    color: black; /* Macht die Links schwarz */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+footer a:hover {
+    color: black; /* Auch beim Hover bleibt der Link schwarz */
+    text-decoration: none; /* Keine Unterstreichung beim Hover */
+}
+
+footer {
+    color: black; /* Stellt sicher, dass der gesamte Text im Footer schwarz ist */
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.exhibitions h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.exhibitions ul li,
+.performance ul li,
+.engagement ul li {
+    line-height: 2 !important;
+    margin-bottom: 10px;
+}
+ /* Optional: Abstand zwischen den Listenelementen */
+
+.bio {
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    text-align: left;
+    margin: 20px;
+    padding: 0;
+}
+
+
+.bio p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
+/* Dropdown-Menü-Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-family: inherit; /* gleiche Schrift wie "works" */
+    font-size: inherit;
+}
+
+.dropdown-content a:hover {
+    background-color: #b30000; /* dunkleres Rot beim Hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.video-entry {
+    font-family: inherit;
+    font-size: 1rem;
+    margin: auto;
+    text-align: left;
+}
+
+.video-link {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.video-link .arrow {
+    padding: 0 0.3rem;
+    color: inherit;
+}
+
+.video-link:hover .arrow {
+    background-color: red;
+    color: white;
+}
+.space-2rem { margin-top: 2rem; }
+.space-4rem { margin-top: 4rem; }
+.manifest-list {
+    text-align: left;
+    margin: 40px 20px;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+}
+
+.manifest-title {
+    cursor: pointer;
+    margin: 20px 0 10px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.manifest-title:hover {
+    color: red;
+}
+
+.manifest-content {
+    display: none;
+    color: black
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Monofonto', monospace;
+    line-height: 1.6;
+}
+
+body[data-page="sensorium"] .bio {
+    max-width: 1300px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+body[data-page="info"] .bio,
+body[data-page="info"] .exhibitions,
+body[data-page="info"] .performance,
+body[data-page="info"] .engagement {
+    max-width: 1300px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+.arrow-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.arrow-link:hover {
+    color: red;
+}
+.sensorium-info-block {
+    background-color: rgb(140, 140, 140);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+}
+
+.sensorium-info-block a.sensorium-arrow {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sensorium-info-block a.sensorium-arrow:hover {
+    color: red;
+}
+.sensorium-contact {
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+    text-align: left;
+    margin: 40px 20px;
+    line-height: 1.6;
+}
+
+.sensorium-contact a.sensorium-insta {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.sensorium-contact a.sensorium-insta:hover {
+    color: red;
+}
+
+
+.sensorium-image-row {
+    display: flex;
+    justify-content: center;  /* optional: zentriert die Bilder in der Zeile */
+}
+
+.sensorium-image-row img {
+    width: 43%;       /* beide Bilder nehmen je die Hälfte ein */
+    height: auto;
+    display: block;
+    margin: 0;        /* kein Abstand zwischen den Bildern */
+    padding: 0;
+}
+.performance-list {
+    text-align: left;
+    margin: auto;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+
+}
+
+.performance-title {
+    font-size: 15px;
+    font-family: 'Monofonto', monospace;
+    color: black;
+    text-align: left;
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+  
+
+.performance-title:hover {
+    color: red;
+}
+
+
+.performance-content {
+    display: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.performance-images {
+    display: flex;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: left;
+}
+
+.performance-images img {
+    width: 49%; /* Zwei Bilder nebeneinander mit kleinem Abstand */
+    height: auto;
+    display: block;
+}
+.performance-images-3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* für kleinere Bildschirme */
+}
+
+.performance-images-3 img {
+    width: 32%;
+    height: auto;
+    display: block;
+}
+.performance-images-4 {
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* erlaubt Umbruch auf kleinen Bildschirmen */
+}
+
+.performance-images-4 img {
+    width: 24%;  /* knapp unter 25%, damit Platz für gap bleibt */
+    height: auto;
+    display: block;
+}
+.shows-heading {
+    font-weight: bold;       /* nur die Überschriften fett */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;        /* linksbündig */
+    font-size: 14px;         /* gleiche Schriftgröße wie restlicher Text */
+}
+
+.show-title {
+    cursor: pointer;
+    font-weight: normal;     /* Termine normal, nicht fett */
+    margin: 5px 0;
+    text-align: left;        /* linksbündig auf gleicher Höhe wie Text */
+    font-size: 14px;         /* gleiche Schriftgröße */
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.show-title:hover {
+    color: red;              /* Hover-Effekt */
+}
+
+.show-content img {
+    display: block;
+    margin-top: 10px;
+    max-width: 35%;
+    height: auto;
+    border-radius: 5px;
+}
+.instagram a {
+    color: inherit;              /* übernimmt die normale Textfarbe */
+    text-decoration: none;       /* entfernt Unterstreichung */
+    transition: color 0.2s ease; /* sanfter Farbwechsel */
+}
+
+.instagram a:hover {
+    color: red;                  /* wird rot beim Hover */
+}
+
+
