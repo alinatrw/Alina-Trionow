@@ -571,3 +571,6 @@ body[data-page="info"] .engagement {
 }
 
 
+.dropdown-content a[href="painting.html"] {
+    display: none;
+}
