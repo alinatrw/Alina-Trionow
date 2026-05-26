@@ -575,4 +575,37 @@ a.logo-link .logo {
 
     flex-shrink: 0;
 }
+.work-preview {
+    display: block;
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: 40px;
 
+    text-decoration: none;
+    color: black;
+}
+
+.work-preview img {
+    width: 450px !important;
+    max-width: 450px !important;
+    height: auto !important;
+    display: block;
+}
+
+.work-preview img:hover {
+    opacity: 0.8;
+}
+
+.work-caption {
+    margin-top: 10px;
+    font-family: 'Monofonto', monospace;
+    font-size: 14px;
+    text-align: left;
+}
+
+.work-preview {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translateX(-40px) translateY(-30px);
+}
