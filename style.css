@@ -24,12 +24,6 @@ header {
     background-color: white;
 }
 
-/* Logo-Styling */
-.logo {
-    font-family: 'Monofonto', monospace;
-    font-size: 15px;
-    font-weight: normal; /* Kein fetter Text */
-}
 
 /* Navigation */
 nav ul {
@@ -70,6 +64,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     color: black;
     text-align: left;
     margin-top: 20px;
+     margin-left: 23px;
 }
 
 .instagram {
@@ -77,6 +72,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     font-family: 'Monofonto', monospace;
     text-align: left;
     margin-top: 20px;
+     margin-left: 23px;
 }
 
 .instagram a {
@@ -118,12 +114,7 @@ header {
     box-shadow: none; /* Falls ein Schatten existiert, entfernen */
 }
 
-/* Logo-Styling */
-header .logo {
-    font-size: 15px;
-    font-family: 'Monofonto', monospace;
-    margin-right: 50px; /* Größerer Abstand zwischen Logo und Navigation */
-}
+
 
 /* Navigation Styling */
 nav ul {
@@ -154,12 +145,6 @@ header {
     box-shadow: none; /* Falls ein Schatten existiert, entfernen */
 }
 
-/* Logo-Styling */
-header .logo {
-    font-size: 15px;
-    font-family: 'Monofonto', monospace;
-    margin-right: 40px; /* Größerer Abstand zwischen Logo und Navigation */
-}
 
 /* Navigation Styling */
 nav ul {
@@ -574,3 +559,20 @@ body[data-page="info"] .engagement {
 .dropdown-content a[href="painting.html"] {
     display: none;
 }
+
+/* FINAL OVERRIDE FÜR WEBSITE-TITEL */
+header .logo,
+.title-link .logo,
+a.logo-link .logo {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    font-family: 'Monofonto', monospace !important;
+
+    margin-left: 35px !important;
+    margin-right: 90px !important;
+
+    color: black !important;
+
+    flex-shrink: 0;
+}
+
