@@ -609,3 +609,50 @@ a.logo-link .logo {
 
     transform: translateX(-40px) translateY(-30px);
 }
+
+.performance-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    margin-left: 40px;
+
+    margin-top: 43px;
+
+    padding-right: 40px;
+}
+
+.work-preview {
+    text-decoration: none;
+
+    color: black;
+
+    display: block;
+}
+
+.work-preview img {
+    width: 450px !important;
+
+    max-width: 450px !important;
+
+    height: auto !important;
+
+    display: block;
+}
+
+.work-preview img:hover {
+    opacity: 0.8;
+}
+
+.work-caption {
+    margin-top: 10px;
+
+    font-family: 'Monofonto', monospace;
+
+    font-size: 14px;
+
+    text-align: left;
+}
+
