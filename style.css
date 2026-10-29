@@ -884,35 +884,95 @@ a.logo-link .logo {
     }
 }
 
-/* KORREKTUR: Performance auf dem iPhone ausrichten */
+
+
+/* KORREKTUR: Performance-Seite auf Smartphones */
 @media screen and (max-width: 768px) {
 
-    .performance-grid {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        width: 100%;
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
     }
 
-    .performance-list,
-    .performance,
-    .performance-content,
-    .performance-title {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        box-sizing: border-box;
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0 auto;
         text-align: left;
     }
 
-    .performance-images,
+    /* Überschriften und Fließtext */
+    main h1,
+    main h2,
+    main p {
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    /* Performance-Bilder: nebeneinander und zentriert */
+    .performance-images {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .performance-images img {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Dreier- und Vierer-Galerien */
     .performance-images-3,
     .performance-images-4 {
-        margin-left: 0;
-        padding-left: 0;
-        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .performance-images-3 img,
+    .performance-images-4 img {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Performance-Text und Inhaltsbereiche */
+    .performance,
+    .performance-list,
+    .performance-content {
+        min-width: 0;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    /* Galerie und Vorschaubilder */
+    .performance-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        margin: 25px auto;
+        padding: 0;
     }
 
 }
+
