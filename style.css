@@ -658,3 +658,228 @@ a.logo-link .logo {
 }
 
 
+
+/* =========================================
+   MOBILE VERSION – ALINA TRIONOW
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Allgemeine Einstellungen */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Monofonto', monospace;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* HEADER UND LOGO */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header .logo,
+    .title-link .logo,
+    a.logo-link .logo {
+        font-size: 20px !important;
+        margin: 0 !important;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* NAVIGATION */
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        min-width: 145px;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+    }
+
+    /* BILDERREIHEN */
+    .image-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .image-row img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* ALLGEMEINE BILDER */
+    main img,
+    .work-preview img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* WORK-PREVIEW */
+    .work-preview {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+    }
+
+    .work-preview img {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .work-caption {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    /* PERFORMANCE-GALERIE */
+    .performance-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 25px 0;
+        padding: 0;
+    }
+
+    .performance-images {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .performance-images img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .performance-images-3,
+    .performance-images-4 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .performance-images-3 img,
+    .performance-images-4 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* SENSORIUM-BILDER */
+    .sensorium-image-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .sensorium-image-row img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* TEXTSEITEN */
+    .bio,
+    .exhibitions,
+    .performance,
+    .engagement,
+    .manifest-list,
+    .sensorium-contact,
+    .sensorium-info-block {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .bio p {
+        line-height: 1.6;
+    }
+
+    /* BILDER IN TEXTINHALTEN */
+    .show-content img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 11px;
+        padding: 15px 10px;
+        margin-top: auto;
+    }
+}
+
+/* EXTRA KLEINE SMARTPHONES */
+@media screen and (max-width: 380px) {
+
+    header {
+        padding: 12px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .image-row {
+        gap: 6px;
+    }
+
+    .performance-grid {
+        gap: 18px;
+    }
+}
